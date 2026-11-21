@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ana Júlia Andrade | Portfólio</title>
+<script src="js/tema.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#topo" aria-label="Página inicial">
+    <i class="fa-solid fa-laptop-code giro-360"></i>
+</a>
+    <div class="d-flex align-items-center gap-2">
+      <div class="dropdown d-none d-md-block">
+        <button class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-bars-staggered me-1"></i> Seções
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" href="#voluntariado">Voluntariado</a></li>
+          <li><a class="dropdown-item" href="#experiencias">Experiências</a></li>
+          <li><a class="dropdown-item" href="#faculdades">Faculdades</a></li>
+          <li><a class="dropdown-item" href="#habilidades">Habilidades e interesses</a></li>
+        </ul>
+      </div>
+      <button class="btn btn-outline-primary" id="tema" aria-label="Alternar entre modo claro e escuro"><i class="fa-solid fa-moon"></i></button>
+      <button class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#gaveta" aria-controls="gaveta">
+        <i class="fa-solid fa-address-card me-1"></i> Contato
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="gaveta" aria-labelledby="gavetaTitulo">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="gavetaTitulo">Vamos conversar</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column gap-3">
+    <p>Estou sempre aberta a novas oportunidades, conexões e experiências que me permitam aprender, compartilhar conhecimentos e crescer profissionalmente. Vamos conversar?</p>
+    <a class="icon-link" href="https://www.linkedin.com/in/ana-j%C3%BAlia-nascimento-de-andrade-6827b840a/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+    <a class="icon-link" href="https://github.com/ana-julia-an" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+    <button class="btn btn-primary mt-auto" id="copiarEmail"><i class="fa-regular fa-copy me-1"></i> Copiar e-mail</button>
+  </div>
+</div>
+
+<main id="topo">
+<header class="hero">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-md-4 text-center">
+        <img class="avatar" src="img/perfil.jpg" alt="Foto de perfil" onerror="this.removeAttribute('src')">
+      </div>
+      <div class="col-md-8">
+        <h1>Ana Júlia Andrade</h1>
+        <p class="fs-4 mt-3 mb-4">Estudante de tecnologia, apaixonado por jogos, dados e inteligência artificial.</p>
+        <div class="d-flex flex-wrap gap-2">
+          <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#sobre">Sobre mim</button>
+          <a class="btn btn-outline-primary btn-lg" href="#experiencias">Ver experiências</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="voluntariado">
+  <div class="container">
+    <nav aria-label="breadcrumb"><ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#topo">Início</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Voluntariado</li>
+    </ol></nav>
+    <h2 class="mb-4">Voluntariado</h2>
+    <div class="row g-4" id="grade-voluntariado">
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm hover-lift">
+          <div class="ratio ratio-16x9 foto"><i class="fa-solid fa-earth-americas"></i><img src="img/agencia-de-missoes.jpg" alt="Agência de Missões" onerror="this.remove()"></div>
+          <div class="card-body d-flex flex-column">
+            <h3 class="h4">Agência de Missões</h3>
+            <p>Participação em projetos sociais, ações solidárias e iniciativas de evangelização urbana, contribuindo para o desenvolvimento de atividades comunitárias.</p>
+            <div class="mt-auto d-flex align-items-center justify-content-between">
+              <span class="badge badge-acc">Voluntário</span>
+              <a href="paginas/agencia-de-missoes.html" class="btn btn-primary stretched-link">Ver mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm hover-lift">
+          <div class="ratio ratio-16x9 foto"><i class="fa-solid fa-film"></i><img src="img/frame.jpg" alt="Frame" onerror="this.remove()"></div>
+          <div class="card-body d-flex flex-column">
+            <h3 class="h4">Frame</h3>
+            <p>Atuação voluntária em uma iniciativa que promove a inclusão, a capacitação e o desenvolvimento de mulheres na área de tecnologia.</p>
+            <div class="mt-auto d-flex align-items-center justify-content-between">
+              <span class="badge badge-acc">Voluntário</span>
+              <a href="paginas/frame.html" class="btn btn-primary stretched-link">Ver mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experiencias" class="alt">
+  <div class="container">
+    <nav aria-label="breadcrumb"><ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#topo">Início</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Experiências</li>
+    </ol></nav>
+    <h2 class="mb-4">Experiências</h2>
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="card shadow-sm hover-lift">
+          <div class="row g-0">
+            <div class="col-md-5">
+              <div class="ratio ratio-4x3 foto h-100"><i class="fa-solid fa-briefcase"></i><img src="img/igg2.webp" alt="IGG" onerror="this.remove()"></div>
+            </div>
+            <div class="col-md-7">
+              <div class="card-body d-flex flex-column h-100">
+                <h3 class="h4">Instituto Gabriel Gastal</h3>
+                <p class="text-secondary mb-2">Monitoria · 2026</p>
+                <p>Atuação como monitora, ministrando aulas de prototipação de sistemas no Figma para alunos do 1º ano do Ensino Médio, em equipe com outros três colegas. Compartilhamento de conhecimentos sobre tecnologia, criação de interfaces e desenvolvimento de projetos.</p>
+                <a href="paginas/igg.html" class="btn btn-primary stretched-link align-self-start mt-auto">Ver mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faculdades">
+  <div class="container">
+    <nav aria-label="breadcrumb"><ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#topo">Início</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Faculdades</li>
+    </ol></nav>
+    <h2 class="mb-5">Faculdades</h2>
+    <ol class="stepper">
+      <li data-n="1"><h3 class="h5">UDF</h3><p class="mb-0 text-secondary">Engenharia de Software · 2026 - 2029</p></li>
+      <li data-n="2"><h3 class="h5">IFB</h3><p class="mb-0 text-secondary">Análise e Desenvolvimento de Sistemas · 2026 - 2028</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="habilidades" class="alt">
+  <div class="container">
+    <nav aria-label="breadcrumb"><ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#topo">Início</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Habilidades e interesses</li>
+    </ol></nav>
+    <h2 class="mb-4">Habilidades e interesses</h2>
+    <div class="d-flex flex-wrap gap-3">
+      <span class="badge rounded-pill badge-acc skill-badge"><i class="fa-solid fa-gamepad me-2"></i>Desenvolvimento de jogos</span>
+      <span class="badge rounded-pill badge-acc skill-badge"><i class="fa-solid fa-database me-2"></i>Banco de dados</span>
+      <span class="badge rounded-pill badge-acc skill-badge"><i class="fa-solid fa-code me-2"></i>Desenvolvimento de software</span>
+      <span class="badge rounded-pill badge-acc skill-badge"><i class="fa-solid fa-diagram-project me-2"></i>Engenharia de software</span>
+      <span class="badge rounded-pill badge-acc skill-badge"><i class="fa-solid fa-brain me-2"></i>Inteligência Artificial</span>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="py-4 text-center">
+  <small>© 2026 Ana Júlia Andrade · Código sob <a href="LICENSE" target="_blank" rel="noopener">Licença MIT</a></small>
+</footer>
+
+<div class="modal fade" id="sobre" tabindex="-1" aria-labelledby="sobreTitulo" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="sobreTitulo">Sobre mim</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <p>Sou estudante de tecnologia, atualmente cursando Engenharia de Software na UDF e Análise e Desenvolvimento de Sistemas no IFB, ambas no segundo semestre. Meu interesse pela área surgiu ainda na adolescência, quando tive meus primeiros contatos com programação e robótica. Desde então, venho descobrindo novas possibilidades dentro da tecnologia e desenvolvendo cada vez mais minhas habilidades.</p>
+
+        <p>Escolhi seguir duas graduações simultaneamente porque acredito que diferentes experiências e conhecimentos podem ampliar minha visão sobre o desenvolvimento de soluções tecnológicas. Tenho interesse especial por Cibersegurança, Engenharia de Software e Desenvolvimento de Jogos, áreas que despertam minha curiosidade pela possibilidade de investigar problemas, construir soluções e criar experiências interativas.</p>
+
+        <p>Sou uma pessoa curiosa, dedicada e persistente. Gosto de aprender coisas novas, enfrentar desafios e entender como as coisas funcionam. Ao longo da minha trajetória, também tenho buscado experiências além da sala de aula, como minha atuação como monitora no Instituto Gabriel Castral, auxiliando estudantes no desenvolvimento de protótipos no Figma, e meu voluntariado na FRAME | Mulheres & Tech, iniciativa que incentiva a participação feminina na tecnologia.</p>
+
+        <p>Uma das minhas maiores conquistas até aqui é conseguir conciliar duas formações acadêmicas e, principalmente, perceber o quanto evoluí desde que comecei a estudar programação. Cada projeto, experiência e desafio representa uma oportunidade de aprendizado e aproximação dos meus objetivos.</p>
+        
+        <p>Quero continuar desenvolvendo minhas habilidades, participar de hackathons e eventos de tecnologia, colaborar com equipes de desenvolvimento e conhecer novas oportunidades, inclusive em contextos internacionais. Acredito que ainda tenho muito a aprender e construir, e vejo cada experiência como uma oportunidade de crescer. Neste portfólio, compartilho um pouco dessa trajetória, dos conhecimentos que venho desenvolvendo e dos projetos que representam minha evolução na tecnologia.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="aviso" class="toast align-items-center border-0 badge-acc" role="status" aria-live="polite" aria-atomic="true">
+    <div class="d-flex">
+      <div class="toast-body">E-mail copiado.</div>
+      <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Fechar"></button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
