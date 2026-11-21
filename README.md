@@ -1,8 +1,8 @@
-# Portfólio de Seu Nome
+# O Meu Portfólio
 
 Site portfólio pessoal com minhas experiências, voluntariados, formação acadêmica e áreas de interesse. Feito com HTML, CSS e JavaScript, responsivo e com modo claro e escuro.
 
-**Acesse o site:** https://SEU-USUARIO.github.io/portfolio/
+**Acesse o site:** https://ana-julia-an.github.io/portfolio/
 
 ## Sobre o projeto
 
@@ -70,7 +70,7 @@ portfolio/
 2. Abra **Settings > Pages**.
 3. Em **Source**, escolha **Deploy from a branch**.
 4. Em **Branch**, selecione `main` e a pasta `/ (root)`, e clique em **Save**.
-5. Depois de 1 a 3 minutos, o site fica disponível em `https://SEU-USUARIO.github.io/portfolio/`.
+5. Depois de 1 a 3 minutos, o site fica disponível em `https://ana-julia-an.github.io/portfolio/`.
 
 ## Licença
 
@@ -78,7 +78,7 @@ O código deste projeto está sob a [Licença MIT](LICENSE). Os textos e as foto
 
 ## Autor
 
-**Seu Nome**
+**Ana Júlia Andrade**
 
-- LinkedIn: https://linkedin.com/in/SEU-PERFIL
-- GitHub: https://github.com/SEU-USUARIO
+- LinkedIn: https://www.linkedin.com/in/ana-j%C3%BAlia-nascimento-de-andrade-6827b840a/
+- GitHub: https://github.com/ana-julia-an
